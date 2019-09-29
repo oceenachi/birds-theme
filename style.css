@@ -1,0 +1,30 @@
+:root {
+    --green: #1abc9c;
+    --black: #000a09;
+    --mid-black: #474e5d;
+    --end-black: #2f2f2f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-y : scroll;
+}
+
+body {
+    padding: 50px, 3em;
+}
+
+.container{
+    position: relative;
+    width: 100px;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+}
