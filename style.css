@@ -15,11 +15,12 @@
 
 html, body {
     height: 100%;   
-    /* overflow-y : scroll; */
+    overflow-y : scroll;
 }
 
 body {
     padding: 50px, 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
@@ -39,6 +40,7 @@ body {
     align-items: center;
     align-content: center;
     color: rgb(126, 111, 111);
+    font-size: 80%;
 }
 
 .nav__logo {
@@ -79,4 +81,24 @@ a {
     background: var(--black);
     border-radius: var(--border-radius);
     margin: 25px 0;
+}
+.main2__middle {
+    background: var(--mid-black);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+h3 {
+    margin-bottom: 30px; 
+}
+
+button {
+    padding: 5px 20px;
+    background: white;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
