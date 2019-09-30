@@ -16,11 +16,13 @@
 html, body {
     height: 100%;   
     overflow-y : scroll;
+
 }
 
 body {
     padding: 50px, 3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000a09;
 }
 
 .container{
@@ -29,6 +31,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     border-radius: 10px;
+    background: white;
 }
 
 
@@ -85,14 +88,17 @@ a {
 .main2__middle {
     background: var(--mid-black);
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 15px;
+    line-height: 1.5rem;
 
 }
 
 h3 {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    text-align: center;
+    
 }
 
 button {
@@ -101,4 +107,32 @@ button {
     border-radius: 10px;
     display: block;
     margin: 10px auto;
+}
+.container_of_3{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.img_div{
+    width: 30%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__div {
+    background: var(--end-black);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: monospace;
+
+}
+
+.footer__div a {
+    color: rgb(56, 56, 197);
+
 }
