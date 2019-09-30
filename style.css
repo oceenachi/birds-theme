@@ -106,13 +106,19 @@ img {
 .items {
   float: right;
 }
+.topnav {
+  padding: 15px 0;
+}
+.topnav a.icon {
+  display: none;
+}
 
 /* IMPORTED STYLE FOR RESPONSIVE NAVBAR */
 
 .topnav a {  
-  padding: 14px 16px;
+  padding: 0px 16px;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgb(126, 111, 111);
 }
 
