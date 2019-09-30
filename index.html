@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Who-am-i</title>
-</head>
-<body>
+
+  </head>
+  <body>
     <div class="container">
-    <header>
-            <nav class="header__nav">
-                <div class="nav__logo"><a href="#"><img src="" alt=""></a>ME</div>
-                <ul class="nav__menu">
-                    <li class= "nav__menu--items"><a href="">WHO</a></li>
-                    <li class= "nav__menu--items"><a href="">WHAT</a></li>
-                    <li class= "nav__menu--items"><a href="">WHERE</a></li>
-                </ul>
-            </nav>
-    </header>
-        <main class="main1">
-            <div class="main__img">
-                <div>
-                    <p>Who Am I?</p>
-                    <img src="eaglehead.png" class="maindiv__img" alt="eagle">
-                    <p>I'm an adventurer</p>
-                </div>
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class=" home active">ME</a>
+          <a class="items" href="#news">WHO</a>
+          <a class="items" href="#contact">WHAT</a>
+          <a class="items" href="#about">WHERE</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+      <main class="main1">
+        <div class="main__img">
+          <div>
+            <p>Who Am I?</p>
+            <img src="eaglehead.png" class="maindiv__img" alt="eagle" />
+            <p>I'm an adventurer</p>
+          </div>
+        </div>
+      </main>
+      <main class="main2">
+        <div class="main2__middle">
+          <br />
+          <h3>What Am I</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            inventore hic dolores maxime at libero sapiente nisi soluta
+            distinctio excepturi? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore, autem.
+          </p>
+          <br />
+          <button class="main2__button" type="button">Search</button>
+        </div>
+      </main>
+      <main class="main3">
+        <div class>
+          <br />
+          <h3>My Skills</h3>
+          <div class="container_of_3">
+            <div class="img_div">
+              <img src="smallbird.jpg" alt="small birds" />
             </div>
-        </main>
-        <main class="main2">
-            <div class="main2__middle"><br>
-                <h3>What Am I</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae inventore hic dolores maxime at libero sapiente nisi soluta distinctio excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, autem.</p><br>
-                <button class="main2__button" type="button" >Search</button>
-
+            <div class="img_div">
+              <img src="flyingbird.jpg" alt="birds in flight" />
             </div>
-
-        </main>
-        <main class="main3">
-            <div class><br>
-                <h3>My Skills</h3>
-                <div class="container_of_3">
-                    <div class="img_div"><img src="smallbird.jpg" alt="small birds"></div>
-                    <div class="img_div"><img src="flyingbird.jpg" alt="birds in flight"></div>
-                    <div class="img_div"><img src="osprey.jpg" alt="long beaked birde"></div>
-                </div>
-
+            <div class="img_div">
+              <img src="osprey.jpg" alt="long beaked birde" />
             </div>
-            <footer>
-                <div class="footer__div">
-                    <small>Bootstrap Theme Made By <a href="www.w3schools.com">www.w3schools.com</a></small>
-                </div>
-            </footer>
-        </main>
+          </div>
+        </div>
+        <footer>
+          <div class="footer__div">
+            <small
+              >Bootstrap Theme Made By
+              <a href="www.w3schools.com">www.w3schools.com</a></small
+            >
+          </div>
+        </footer>
+      </main>
     </div>
-    
-</body>
+    <!-- <script>
+      function myFunction() {
+        var x = document.getElementById("nav__menu");
+        if (x.className === "nav__menu") {
+          x.className = "responsive";
+        } else {
+          x.style.display = "nav__menu";
+        }
+      }
+    </script> -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
 </html>
